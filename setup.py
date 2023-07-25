@@ -16,4 +16,4 @@ if __name__ == "__main__":
     with open(cwd.joinpath("my_lib", "version.py"), "w", encoding="utf-8") as f:
         f.write(f"__version__ = '{VERSION}'\n")
 
-    setup(name=PKG_NAME, version=VERSION)
+    setup(name=PKG_NAME, version=VERSION, install_requires=["pydantic"])
